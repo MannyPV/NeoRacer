@@ -1234,6 +1234,17 @@ Transform:
   m_Father: {fileID: 55617400}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1514330513 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1525583690942740983, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
+  m_PrefabInstance: {fileID: 8864492323167981049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1555537711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,6 +2307,10 @@ PrefabInstance:
       propertyPath: TurnSpeed
       value: 2.75
       objectReference: {fileID: 0}
+    - target: {fileID: 7839326824834942359, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
+      propertyPath: speedometer
+      value: 
+      objectReference: {fileID: 1514330513}
     - target: {fileID: 7839326824834942360, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
       propertyPath: m_Size.x
       value: 2.5
@@ -2390,6 +2405,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1525583690942740983, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
+      propertyPath: m_Text
+      value: 'Speed: '
+      objectReference: {fileID: 0}
     - target: {fileID: 8864492323433183481, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2477,6 +2496,10 @@ PrefabInstance:
     - target: {fileID: 8864492323433183493, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8864492323907136893, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
+      propertyPath: m_Text
+      value: 'Lap: 0/3'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
