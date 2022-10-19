@@ -17,9 +17,9 @@ public class HoverOverPlay : MonoBehaviour , IPointerEnterHandler, IPointerExitH
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        LeanTween.scale(_playBtn, new Vector3(1f, 1f, 1f), 0.01f).setEase(LeanTweenType.easeInExpo);
         LeanTween.scale(_playAddedTxtOne, new Vector3(1f, 0f, 1f), 0.08f).setEase(LeanTweenType.easeInExpo);
         LeanTween.scale(_playAddedTxtTwo, new Vector3(1f, 0f, 1f), 0.08f).setEase(LeanTweenType.easeInExpo);
+        LeanTween.scale(_playBtn, new Vector3(1f, 1f, 1f), 0.01f).setEase(LeanTweenType.easeInExpo);
         LeanTween.alpha(_playBackground.GetComponent<RectTransform>(), 0f, 0.1f);
     }
 }
