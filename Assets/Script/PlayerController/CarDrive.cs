@@ -58,4 +58,13 @@ public class CarDrive : MonoBehaviour
         speedometer.text = "Speed: " + (int)rb.velocity.magnitude*3;
         // Changes the text on the UI to whatever the speed is as an int. *3 because the numbers make more sense that way.
     }
+
+    void QuitGame()
+    {
+        if (Input.GetKey(KeyCode.Q))
+        {
+            Debug.Log("I quit");
+            Application.Quit();
+        }
+    }
 }

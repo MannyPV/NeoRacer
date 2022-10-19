@@ -31,6 +31,11 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("New Track Oval");
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     
 
     
