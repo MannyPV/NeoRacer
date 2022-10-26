@@ -9890,6 +9890,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &730040611 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6629138461979932308, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
+  m_PrefabInstance: {fileID: 8864492323167981049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &738343709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f8181f23322409241b88da11f70127c6, type: 3}
@@ -14990,6 +15001,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnSpot: {fileID: 1535328244}
+--- !u!114 &1085310715 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7839326824834942359, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
+  m_PrefabInstance: {fileID: 7839326824880071405}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085310711}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 629ccb8b3cb978d489587348c099ea1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1085310720 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6465589914364041833, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
+  m_PrefabInstance: {fileID: 7839326824880071405}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085310711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4114309a33582714c9e684d580cf679b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1085865113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31454,6 +31487,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6465589914364041833, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
+      propertyPath: carDrive
+      value: 
+      objectReference: {fileID: 1085310715}
+    - target: {fileID: 6465589914364041833, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
+      propertyPath: GearCount
+      value: 
+      objectReference: {fileID: 730040611}
     - target: {fileID: 7839326824834942353, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
       propertyPath: LapDisplayText
       value: 
@@ -31515,9 +31556,17 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7839326824834942359, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
+      propertyPath: Gear
+      value: 
+      objectReference: {fileID: 1085310720}
+    - target: {fileID: 7839326824834942359, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
       propertyPath: Speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7839326824834942359, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
+      propertyPath: GearCount
+      value: 
+      objectReference: {fileID: 730040611}
     - target: {fileID: 7839326824834942359, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
       propertyPath: m_Enabled
       value: 0
