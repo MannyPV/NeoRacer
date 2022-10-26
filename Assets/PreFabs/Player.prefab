@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7839326824834942356}
   - component: {fileID: 7839326824834942359}
   - component: {fileID: 7839326824834942358}
+  - component: {fileID: 6465589914364041833}
   - component: {fileID: 7839326824834942353}
   m_Layer: 0
   m_Name: Player
@@ -132,6 +133,9 @@ MonoBehaviour:
   Speed: 4
   multiplier: 10
   gravityMultiplier: 5
+  reverse: 0
+  Gear: {fileID: 0}
+  speedometer: {fileID: 0}
 --- !u!114 &7839326824834942358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +150,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TurnSpeed: 2
   multiplier: 10
+--- !u!114 &6465589914364041833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839326824834942361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4114309a33582714c9e684d580cf679b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gear: 0
+  MaxGear: 6
+  MaxVelocity: 0
+  GearCount: {fileID: 0}
 --- !u!114 &7839326824834942353
 MonoBehaviour:
   m_ObjectHideFlags: 0

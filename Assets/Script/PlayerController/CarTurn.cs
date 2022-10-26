@@ -23,11 +23,11 @@ public class CarTurn : MonoBehaviour
     
      void Turn()
     {
-        if (Input.GetKey(KeyCode.A) || Input.GetAxisRaw("HorizontalTurn") == -1)
+        if (Input.GetKey(KeyCode.A) || Input.GetAxisRaw("Horizontal") == -1)
         {
             rb.AddTorque(-Vector3.up * TurnSpeed * multiplier);
         }
-        else if (Input.GetKey(KeyCode.D) || Input.GetAxisRaw("HorizontalTurn") == 1)
+        else if (Input.GetKey(KeyCode.D) || Input.GetAxisRaw("Horizontal") == 1)
         {
             rb.AddTorque(Vector3.up * TurnSpeed * multiplier);
         }
