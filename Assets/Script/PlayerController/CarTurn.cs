@@ -7,6 +7,7 @@ public class CarTurn : MonoBehaviour
     
     private Rigidbody rb;
     public float TurnSpeed = 4f;
+    public float TurnSpeedOnAngle = 8f;
     public int multiplier = 10;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class CarTurn : MonoBehaviour
     void FixedUpdate()
     {
         Turn();
+        OnAngle();
     }
 
     
@@ -30,6 +32,17 @@ public class CarTurn : MonoBehaviour
         else if (Input.GetKey(KeyCode.D) || Input.GetAxisRaw("Horizontal") == 1)
         {
             rb.AddTorque(Vector3.up * TurnSpeed * multiplier);
+        }
+    }
+    void OnAngle()
+    {
+        if(transform.rotation.eulerAngles.x >= 15 || transform.rotation.eulerAngles.x <= -15)
+        {
+            TurnSpeed = TurnSpeedOnAngle;
+        }
+        else
+        {
+            TurnSpeed = 4f;
         }
     }
 }
