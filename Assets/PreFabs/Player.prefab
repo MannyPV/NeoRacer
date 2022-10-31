@@ -302,6 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TotalLaps: 3
   CurrentLaps: 1
+  WinStateUI: {fileID: 0}
   minTimeBetweenLaps: 30
   LapDisplayText: {fileID: 0}
   isPlayer: 1

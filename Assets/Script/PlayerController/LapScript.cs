@@ -7,6 +7,8 @@ public class LapScript : MonoBehaviour
     public int TotalLaps= 3;
     public int CurrentLaps=1;
 
+    public GameObject WinStateUI;
+
     bool CanDoLaps;
     float timeBetweenLaps;
     public float minTimeBetweenLaps = 30f;
@@ -38,6 +40,11 @@ public class LapScript : MonoBehaviour
         {
             CurrentLaps +=1;
             CanDoLaps = false;
+        }
+
+        if(other.tag == "Lap" && CurrentLaps > TotalLaps)
+        {
+            WinStateUI.SetActive(true);
         }
     }
 }
