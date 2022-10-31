@@ -10,6 +10,8 @@ public class CarLives : MonoBehaviour
     public GameObject life2;
     public GameObject life3;
 
+    public GameObject GameOverUI;
+
     public GameObject player;
     Rigidbody rigid;
     Checkpoint check;
@@ -31,22 +33,26 @@ public class CarLives : MonoBehaviour
         if (lives < 3 && life1.activeSelf == true)
         {
             //Debug.Log("Life 1 disabled");
-            life1.SetActive(false);
+            LeanTween.alpha(life1.GetComponent<RectTransform>(), 0f, 0.5f).setOnComplete(RemoveStarOne);
+            //life1.SetActive(false);
         }
 
         if (lives < 2 && life2.activeSelf == true)
         {
             //Debug.Log("Life 2 disabled");
-            life2.SetActive(false);
+            LeanTween.alpha(life2.GetComponent<RectTransform>(), 0f, 0.5f).setOnComplete(RemoveStarTwo);
+            //life2.SetActive(false);
         }
 
         if (lives < 1 && life3.activeSelf == true)
         {
             //Debug.Log("Life 3 disabled");
-            life3.SetActive(false);
+            LeanTween.alpha(life3.GetComponent<RectTransform>(), 0f, 0.5f).setOnComplete(RemoveStarThree);
+            //life3.SetActive(false);
 
             Debug.Log("PLAYER LOSE");
-            LoadLoseScreen();
+            GameOverUI.SetActive(true);
+            //LoadLoseScreen();
 
         }
     }
@@ -70,8 +76,20 @@ public class CarLives : MonoBehaviour
         canLoseLife = true;
     }
 
-    void LoadLoseScreen()
+    void RemoveStarOne()
     {
-
+        life1.SetActive(false);
     }
+
+    void RemoveStarTwo()
+    {
+        life2.SetActive(false);
+    }
+
+    void RemoveStarThree()
+    {
+        life3.SetActive(false);
+    }
+
+
 }

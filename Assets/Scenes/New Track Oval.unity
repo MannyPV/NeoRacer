@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.010482521, g: 0.0529591, b: 0.1531336, a: 1}
+  m_IndirectSpecularColor: {r: 0.010486943, g: 0.05298245, b: 0.15319028, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -31513,6 +31513,10 @@ PrefabInstance:
       propertyPath: life3
       value: 
       objectReference: {fileID: 8864492323167981050}
+    - target: {fileID: 1511274962, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
+      propertyPath: GameOverUI
+      value: 
+      objectReference: {fileID: 8864492323167981054}
     - target: {fileID: 6465589914364041833, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
       propertyPath: GearCount
       value: 
@@ -31586,17 +31590,9 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1085310711}
-    - target: {fileID: 1331778319039606225, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
-      propertyPath: m_Name
-      value: Life 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2811315139124247405, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
-      propertyPath: m_Name
-      value: Life 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650352640096594633, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
-      propertyPath: m_Name
-      value: Life 2
+    - target: {fileID: 1008436506497972634, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8864492323433183481, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
       propertyPath: m_Pivot.x
@@ -31701,5 +31697,10 @@ GameObject:
 --- !u!1 &8864492323167981052 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1331778319039606225, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
+  m_PrefabInstance: {fileID: 8864492323167981049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8864492323167981054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1008436506497972634, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
   m_PrefabInstance: {fileID: 8864492323167981049}
   m_PrefabAsset: {fileID: 0}

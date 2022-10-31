@@ -114,6 +114,7 @@ MonoBehaviour:
   life1: {fileID: 0}
   life2: {fileID: 0}
   life3: {fileID: 0}
+  GameOverUI: {fileID: 0}
   player: {fileID: 7839326824834942361}
 --- !u!1 &7839326824834942361
 GameObject:

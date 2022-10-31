@@ -1595,7 +1595,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 674670257}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2096340397}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: CreditsClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &674670257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1731,7 +1743,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 829812253}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2096340397}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: CreditsClosed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &829812253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3603,7 +3627,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2096340397}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
-        m_MethodName: SettingClicked
+        m_MethodName: SettingsClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4144,7 +4168,7 @@ MonoBehaviour:
   _quitBtn: {fileID: 1462062979}
   _recordsBackBtn: {fileID: 28152861}
   _settingsBackBtn: {fileID: 1451648858}
-  _creditsBackBtn: {fileID: 0}
+  _creditsBackBtn: {fileID: 829812250}
   _quitBackBtn: {fileID: 0}
   _quitConfirmBtn: {fileID: 0}
   _recordsBackground: {fileID: 1155791485}
