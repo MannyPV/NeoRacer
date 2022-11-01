@@ -34,7 +34,6 @@ public class LapScript : MonoBehaviour
         {
             LapDisplayText.text = "Laps: " + CurrentLaps+ "/" + TotalLaps;
         }
-        
     }
     private void OnTriggerEnter(Collider other)
     {
