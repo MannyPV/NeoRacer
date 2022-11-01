@@ -25,9 +25,12 @@ public class CarDrive : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(!PauseMenu.isPaused)
+        {
         Move();
         Fall();
         Reverse();
+        }
     }
 
     void Move()
@@ -84,13 +87,5 @@ public class CarDrive : MonoBehaviour
         // Changes the text on the UI to whatever the speed is as an int. *3 because the numbers make more sense that way.
     }
 
-    void QuitGame()
-    {
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            Debug.Log("I quit");
-            Application.Quit();
-        }
-    }
    
 }

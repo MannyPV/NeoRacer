@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.010486943, g: 0.05298245, b: 0.15319028, a: 1}
+  m_IndirectSpecularColor: {r: 0.010485779, g: 0.052983798, b: 0.15318781, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16542,6 +16542,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1177451725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7704030196613518293, guid: b8edbd1bcde323842aae317c3f412fbd, type: 3}
+  m_PrefabInstance: {fileID: 8864492323167981049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1181757671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e9580784170bf43478da961a1b059cbe, type: 3}
@@ -20998,6 +21003,51 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1469389385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1469389387}
+  - component: {fileID: 1469389386}
+  m_Layer: 0
+  m_Name: PauseMenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1469389386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469389385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09489a83c8ff59f41b20d8c530df9974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 1177451725}
+--- !u!4 &1469389387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469389385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 782.4103, y: 501.08096, z: -31.95207}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1471092770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29889,7 +29939,7 @@ GameObject:
   - component: {fileID: 2056611812}
   - component: {fileID: 2056611813}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: BGmusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29922,7 +29972,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 817e875fed6574c4b9a768cea5064736, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -31454,12 +31504,24 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3677644005559154055, guid: 0ddff79db5e42e5449ebe32c877534b6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677644005559154055, guid: 0ddff79db5e42e5449ebe32c877534b6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677644005559154055, guid: 0ddff79db5e42e5449ebe32c877534b6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677644005559154055, guid: 0ddff79db5e42e5449ebe32c877534b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 3677644005559154055, guid: 0ddff79db5e42e5449ebe32c877534b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 112.8
+      value: 112.79999
       objectReference: {fileID: 0}
     - target: {fileID: 3677644005559154055, guid: 0ddff79db5e42e5449ebe32c877534b6, type: 3}
       propertyPath: m_LocalPosition.z

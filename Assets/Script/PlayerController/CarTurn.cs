@@ -18,8 +18,11 @@ public class CarTurn : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(!PauseMenu.isPaused)
+        {
         Turn();
         OnAngle();
+        }
     }
 
     
