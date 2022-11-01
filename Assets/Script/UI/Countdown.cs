@@ -16,8 +16,14 @@ public class Countdown : MonoBehaviour
     bool clearCounter;
     float clearTimer;
 
+    public AudioClip bgMusic;
+    public AudioClip countSFX;
+
     void Start()
     {
+        SoundManager.instance.PlaySFX(countSFX);
+        SoundManager.instance.PlayMusic(bgMusic);
+
         timer = 8;
 
         countdown.text = "...";

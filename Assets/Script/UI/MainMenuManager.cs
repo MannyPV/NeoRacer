@@ -9,17 +9,25 @@ public class MainMenuManager : MonoBehaviour
     _recordsBackBtn, _settingsBackBtn, _creditsBackBtn, _quitBackBtn, _quitConfirmBtn, // Main Menu Sub Buttons
     _recordsBackground, _settingsBackground, _creditsBackground, _quitBackground; //Main Menu Backgrounds
 
+    public AudioClip selectSFX;
+    public AudioClip welcomeSFX;
+    public AudioClip bgMusic;
 
     public void NoSelections() => EventSystem.current.SetSelectedGameObject(null);
 
     void Start()
     {
+        SoundManager.instance.PlaySFX(welcomeSFX);
+        SoundManager.instance.PlayMusic(bgMusic);
+
         NoSelections();
         EventSystem.current.SetSelectedGameObject(_playBtn);
     }
 
     public void PlayClicked()
     {
+        SoundManager.instance.PlaySFX(selectSFX);
+
         SceneManager.LoadScene("New Track Oval");
     }
 
@@ -37,6 +45,8 @@ public class MainMenuManager : MonoBehaviour
 
         LeanTween.moveLocal(_recordsBackBtn, new Vector3(-1200f, -500f, 0f), 1f).setDelay(0.5f).setEase(LeanTweenType.easeInCubic);
         EventSystem.current.SetSelectedGameObject(_recordsBackBtn);
+
+        SoundManager.instance.PlaySFX(selectSFX);
     }
 
     public void RecordsClosed()
@@ -54,6 +64,8 @@ public class MainMenuManager : MonoBehaviour
         LeanTween.moveLocal(_quitBtn, new Vector3(0f, -500f, 0f), 1f).setDelay(0.4f).setEase(LeanTweenType.easeOutCubic);
 
         EventSystem.current.SetSelectedGameObject(_recordsBtn);
+        
+        SoundManager.instance.PlaySFX(selectSFX);
     }
 
     public void SettingsClicked()
@@ -70,6 +82,8 @@ public class MainMenuManager : MonoBehaviour
 
         LeanTween.moveLocal(_settingsBackBtn, new Vector3(-1200f, -500f, 0f), 1f).setDelay(0.5f).setEase(LeanTweenType.easeInCubic);
         EventSystem.current.SetSelectedGameObject(_settingsBackBtn);
+
+        SoundManager.instance.PlaySFX(selectSFX);
     }
 
     public void SettingsClosed()
@@ -87,6 +101,8 @@ public class MainMenuManager : MonoBehaviour
         LeanTween.moveLocal(_quitBtn, new Vector3(0f, -500f, 0f), 1f).setDelay(0.3f).setEase(LeanTweenType.easeOutCubic);
 
         EventSystem.current.SetSelectedGameObject(_settingsBtn);
+
+        SoundManager.instance.PlaySFX(selectSFX);
     }
 
     public void CreditsClicked()
@@ -104,6 +120,8 @@ public class MainMenuManager : MonoBehaviour
 
         LeanTween.moveLocal(_creditsBackBtn, new Vector3(-1200f, -500f, 0f), 1f).setDelay(0.5f).setEase(LeanTweenType.easeInCubic);
         EventSystem.current.SetSelectedGameObject(_creditsBackBtn);
+
+        SoundManager.instance.PlaySFX(selectSFX);
     }
 
     public void CreditsClosed()
@@ -121,6 +139,8 @@ public class MainMenuManager : MonoBehaviour
         LeanTween.moveLocal(_quitBtn, new Vector3(0f, -500f, 0f), 1f).setDelay(0.2f).setEase(LeanTweenType.easeOutCubic);
 
         EventSystem.current.SetSelectedGameObject(_creditsBtn);
+
+        SoundManager.instance.PlaySFX(selectSFX);
     }
 
     public void QuitGame()

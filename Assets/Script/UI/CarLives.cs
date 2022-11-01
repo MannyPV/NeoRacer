@@ -18,6 +18,8 @@ public class CarLives : MonoBehaviour
 
     bool canLoseLife;
 
+    public AudioClip loseLifeSFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +65,9 @@ public class CarLives : MonoBehaviour
         {
             canLoseLife = false;
             lives--;
+            
+            SoundManager.instance.PlaySFX(loseLifeSFX);
+
             Debug.Log("Player has " + lives + " lives");
             ResetPlayer();
         }

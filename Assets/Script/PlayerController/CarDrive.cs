@@ -15,9 +15,14 @@ public class CarDrive : MonoBehaviour
     public Gears Gear;
 
     public Text speedometer; // The speed text on the UI
+
+    public AudioClip engineSFX;
+
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.instance.PlayEngineSFX(engineSFX);
+
         rb = GetComponent<Rigidbody>();
         reverse = false;
     }

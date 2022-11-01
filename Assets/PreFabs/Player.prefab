@@ -116,6 +116,7 @@ MonoBehaviour:
   life3: {fileID: 0}
   GameOverUI: {fileID: 0}
   player: {fileID: 7839326824834942361}
+  loseLifeSFX: {fileID: 8300000, guid: 8fe9505ea5233bb48b9b3ee1907b5e71, type: 3}
 --- !u!1 &7839326824834942361
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +257,7 @@ MonoBehaviour:
   CurrentSpeed: 0
   Gear: {fileID: 6465589914364041833}
   speedometer: {fileID: 0}
+  engineSFX: {fileID: 8300000, guid: 55528732dd6237446b1688e8d6c2a222, type: 3}
 --- !u!114 &7839326824834942358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +290,7 @@ MonoBehaviour:
   MaxVelocity: 0
   GearCount: {fileID: 0}
   carDrive: {fileID: 7839326824834942359}
+  shiftSFX: {fileID: 8300000, guid: 544444892e5cba64fb37ef693b004432, type: 3}
 --- !u!114 &7839326824834942353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 229a743b8366e8640950ee08898c031c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lapSFX: {fileID: 8300000, guid: c71c8ee4239edac4b8f5784651d7d496, type: 3}
   TotalLaps: 3
   CurrentLaps: 1
   WinStateUI: {fileID: 0}

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class LapScript : MonoBehaviour
-{   
+{
+    public AudioClip lapSFX;
+
     public int TotalLaps= 3;
     public int CurrentLaps=1;
 
@@ -38,7 +40,9 @@ public class LapScript : MonoBehaviour
     {
         if(other.tag == "Lap" && CanDoLaps)
         {
-            CurrentLaps +=1;
+            SoundManager.instance.PlaySFX(lapSFX);
+
+            CurrentLaps += 1;
             CanDoLaps = false;
         }
 

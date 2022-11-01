@@ -3769,6 +3769,8 @@ MonoBehaviour:
   countdown: {fileID: 5202799186373495370}
   countBack: {fileID: 7924550847683088677}
   player: {fileID: 0}
+  bgMusic: {fileID: 0}
+  countSFX: {fileID: 8300000, guid: 40b9e75624b9d6c41946d425fed24a12, type: 3}
 --- !u!1 &8864492323907136891
 GameObject:
   m_ObjectHideFlags: 0

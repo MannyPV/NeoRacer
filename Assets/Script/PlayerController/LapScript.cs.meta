@@ -3,7 +3,10 @@ guid: 229a743b8366e8640950ee08898c031c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - lapSFX: {fileID: 8300000, guid: c71c8ee4239edac4b8f5784651d7d496, type: 3}
+  - WinStateUI: {instanceID: 0}
+  - LapDisplayText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

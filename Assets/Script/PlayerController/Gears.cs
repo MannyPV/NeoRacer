@@ -10,6 +10,7 @@ public class Gears : MonoBehaviour
     private bool axisInuse = false;
     public Text GearCount; // The Gear text on the UI
     public CarDrive carDrive;
+    public AudioClip shiftSFX;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class Gears : MonoBehaviour
                 {
                     if(carDrive.CurrentSpeed >= MaxVelocity)
                     {
+                        SoundManager.instance.PlaySFX(shiftSFX);
                         Gear++;
                     }
                 }
@@ -45,6 +47,7 @@ public class Gears : MonoBehaviour
                 axisInuse = true;
                 if (Gear != 0)
                 {
+                    SoundManager.instance.PlaySFX(shiftSFX);
                     Gear--;
                 }
             }
