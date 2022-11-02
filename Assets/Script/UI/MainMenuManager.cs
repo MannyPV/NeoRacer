@@ -7,7 +7,8 @@ public class MainMenuManager : MonoBehaviour
 {
     public GameObject _playBtn, _settingsBtn, _creditsBtn, _quitBtn, //Main Menu Buttons
     _settingsBackBtn, _creditsBackBtn, // Main Menu Sub Buttons
-    _settingsBackground, _creditsBackground, _quitBackground; //Main Menu Backgrounds
+    _settingsBackground, _creditsBackground, _quitBackground,
+    _settingHandler, _creditsHandler; //Main Menu Backgrounds
 
     public AudioClip selectSFX;
     public AudioClip welcomeSFX;
@@ -40,6 +41,7 @@ public class MainMenuManager : MonoBehaviour
         LeanTween.moveLocal(_creditsBtn, new Vector3(-1750f, -150f, 0f), 0.75f).setDelay(0.1f).setEase(LeanTweenType.easeInCubic);
         LeanTween.moveLocal(_quitBtn, new Vector3(-1750f, -350f, 0f), 0.7f).setDelay(0.2f).setEase(LeanTweenType.easeInCubic);
 
+        LeanTween.moveLocal(_settingHandler, new Vector3(0f, 0f, 0f), 1f).setDelay(0.5f).setEase(LeanTweenType.easeInCubic);
         LeanTween.moveLocal(_settingsBackBtn, new Vector3(-1200f, -500f, 0f), 1f).setDelay(0.5f).setEase(LeanTweenType.easeInCubic);
         EventSystem.current.SetSelectedGameObject(_settingsBackBtn);
 
@@ -52,6 +54,7 @@ public class MainMenuManager : MonoBehaviour
 
         LeanTween.alpha(_settingsBackground.GetComponent<RectTransform>(), 0f, 0.8f);
 
+        LeanTween.moveLocal(_settingHandler, new Vector3(2500f, 0f, 0f), 0.3f).setEase(LeanTweenType.easeInCubic);
         LeanTween.moveLocal(_settingsBackBtn, new Vector3(-1700f, -500f, 0f), 0.3f).setEase(LeanTweenType.easeInCubic);
 
         LeanTween.moveLocal(_playBtn, new Vector3(0f, 250f, 0f), 1f).setDelay(0.2f).setEase(LeanTweenType.easeOutCubic);
@@ -75,7 +78,8 @@ public class MainMenuManager : MonoBehaviour
         LeanTween.moveLocal(_creditsBtn, new Vector3(-1750f, -150f, 0f), 0.75f).setEase(LeanTweenType.easeInCubic);
         LeanTween.moveLocal(_quitBtn, new Vector3(-1750f, -350f, 0f), 0.7f).setDelay(0.1f).setEase(LeanTweenType.easeInCubic);
 
-        LeanTween.moveLocal(_creditsBackBtn, new Vector3(-1200f, -500f, 0f), 1f).setDelay(0.5f).setEase(LeanTweenType.easeInCubic);
+        LeanTween.moveLocal(_creditsHandler, new Vector3(0f, 0f, 0f), 1f).setDelay(0.5f).setEase(LeanTweenType.easeInCubic);
+        LeanTween.moveLocal(_creditsBackBtn, new Vector3(0f, -500f, 0f), 1f).setDelay(0.5f).setEase(LeanTweenType.easeInCubic);
         EventSystem.current.SetSelectedGameObject(_creditsBackBtn);
 
         SoundManager.instance.PlaySFX(selectSFX);
@@ -87,6 +91,7 @@ public class MainMenuManager : MonoBehaviour
 
         LeanTween.alpha(_creditsBackground.GetComponent<RectTransform>(), 0f, 0.8f);
 
+        LeanTween.moveLocal(_creditsHandler, new Vector3(3000f, 0f, 0f), 0.3f).setEase(LeanTweenType.easeInCubic);
         LeanTween.moveLocal(_creditsBackBtn, new Vector3(-1700f, -500f, 0f), 0.3f).setEase(LeanTweenType.easeInCubic);
 
         LeanTween.moveLocal(_playBtn, new Vector3(0f, 250f, 0f), 1f).setDelay(0.3f).setEase(LeanTweenType.easeOutCubic);
