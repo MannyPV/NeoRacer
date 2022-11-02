@@ -9,6 +9,8 @@ public class RespawnPlayer : MonoBehaviour
     Checkpoint check;
     Rigidbody rigid;
 
+    public Gears Gears;
+
     private void Start()
     {
         check = player.GetComponent<Checkpoint>();
@@ -24,6 +26,7 @@ public class RespawnPlayer : MonoBehaviour
             player.transform.SetPositionAndRotation(check.respawnSpot.transform.position, check.respawnSpot.transform.rotation);
             rigid.velocity = Vector3.zero;
             rigid.angularVelocity = Vector3.zero;
+            Gears.Gear= 0;
         }
     }
 }

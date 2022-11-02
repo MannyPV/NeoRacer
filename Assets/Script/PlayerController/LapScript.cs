@@ -18,6 +18,8 @@ public class LapScript : MonoBehaviour
     public Text LapDisplayText;
 
     public bool isPlayer;
+
+    public Checkpoint Checkpoint; 
     void Update()
     {
         if(timeBetweenLaps <= 0)
@@ -37,12 +39,13 @@ public class LapScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Lap" && CanDoLaps)
+        if(other.tag == "Lap" && CanDoLaps && Checkpoint.currentCheckPoint == Checkpoint.TotalCheckpoints)
         {
             SoundManager.instance.PlaySFX(lapSFX);
 
             CurrentLaps += 1;
             CanDoLaps = false;
+            Checkpoint.currentCheckPoint=0;
         }
 
         if(other.tag == "Lap" && CurrentLaps > TotalLaps)

@@ -77,7 +77,7 @@ public class Gears : MonoBehaviour
                 MaxVelocity=150;
                 break;
             case 5:
-                MaxVelocity=200;
+                MaxVelocity=186;
                 break;
             case 6:
                 MaxVelocity=500;

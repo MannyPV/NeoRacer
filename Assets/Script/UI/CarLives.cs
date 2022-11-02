@@ -15,6 +15,7 @@ public class CarLives : MonoBehaviour
     public GameObject player;
     Rigidbody rigid;
     Checkpoint check;
+    public Gears Gears;
 
     bool canLoseLife;
 
@@ -67,6 +68,7 @@ public class CarLives : MonoBehaviour
         rigid.velocity = Vector3.zero;
         rigid.angularVelocity = Vector3.zero;
         canLoseLife = true;
+        Gears.Gear= 0;
     }
 
     void RemoveStarOne() => life1.SetActive(false);
