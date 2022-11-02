@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2488
     height: 1397
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 677
     height: 311
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 101
+  controlID: 107
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 53
+  controlID: 55
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,8 +119,8 @@ MonoBehaviour:
     y: 0
     width: 455
     height: 1347
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -145,8 +145,8 @@ MonoBehaviour:
     y: 0
     width: 260
     height: 1036
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 54
+  controlID: 61
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 55
+  controlID: 62
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -544,22 +544,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Packages/SkySeries Freebie/ExampleScenes/SceneObjects
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Packages/SkySeries Freebie/ExampleScenes/SceneObjects
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\kevin\OneDrive\Documents\CGP\NeoRacer\NeoRacer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 66}
-    m_SelectedIDs: a48a0000
-    m_LastClickedID: 35492
-    m_ExpandedIDs: 00000000da880000dc880000de880000e0880000e2880000e4880000e6880000ea880000ec8800009c8a0000a28a0000ac8a000000ca9a3b
+    scrollPos: {x: 0, y: 34}
+    m_SelectedIDs: 82340100
+    m_LastClickedID: 78978
+    m_ExpandedIDs: 00000000b2850000b4850000b6850000b8850000ba850000bc850000be850000c0850000c2850000c48500006e87000070870000503401006e34010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -587,7 +587,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000da880000dc880000de880000e0880000e2880000e4880000e6880000e8880000ea880000ec880000
+    m_ExpandedIDs: 00000000b2850000b4850000b6850000b8850000ba850000bc850000be850000c0850000c2850000c4850000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -715,9 +715,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 3a21feff8c30feffd863ffff4a64ffffa465ffff5666ffff1874fffff875ffff467effff2888ffffdcfaffff307100008ab30200
+      m_SelectedIDs: 70daffff
+      m_LastClickedID: -9616
+      m_ExpandedIDs: e4d2ffff1cd3ffff2cd3ffff3cd3ffff4ee1ffffdae4ffffcce5ffffb0e7ffff94e9ffffa8faffffd0880000ea8e0000889a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -851,7 +851,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: -372, y: -208}
+      snapOffset: {x: -372, y: -226}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Scene View/Camera
@@ -966,9 +966,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -56.96727, y: 26.254826, z: 298.9744}
+    m_Target: {x: -772.89996, y: 222.6528, z: -880.81116}
     speed: 2
-    m_Value: {x: -56.96727, y: 26.254826, z: 298.9744}
+    m_Value: {x: -772.89996, y: 222.6528, z: -880.81116}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1015,13 +1015,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.16468126, y: 0.0124910455, z: -0.0009438135, w: -0.98700994}
+    m_Target: {x: -0.00048772874, y: 0.9999341, z: -0.042331543, w: -0.0014954244}
     speed: 2
-    m_Value: {x: -0.16603997, y: 0.01248047, z: -0.0009618994, w: -0.98603964}
+    m_Value: {x: -0.00048508937, y: 0.9991662, z: -0.04079769, w: -0.0014949096}
   m_Size:
-    m_Target: 172.9732
+    m_Target: 126.99798
     speed: 2
-    m_Value: 172.9732
+    m_Value: 126.99798
   m_Ortho:
     m_Target: 0
     speed: 2
