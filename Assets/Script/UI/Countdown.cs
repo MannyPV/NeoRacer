@@ -27,7 +27,6 @@ public class Countdown : MonoBehaviour
         timer = 8;
 
         countdown.text = "...";
-        //countdown.color = Color.white;
 
         driveScript = player.GetComponent<CarDrive>();
         turnScript = player.GetComponent<CarTurn>();

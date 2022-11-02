@@ -45,17 +45,19 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
+    public void ResetRace()
+    {
+        Time.timeScale = 1f;
+        isPaused = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void ReturnToMenu()
     {
         Time.timeScale = 1f;
+        isPaused = false;
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
-
-
-
+    public void QuitGame() => Application.Quit();
 }

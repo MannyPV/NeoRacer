@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New Track Oval.unity
     guid: bf8e8f9f04a2c894eb8db12bee7176e4
+  - enabled: 1
+    path: Assets/Scenes/New Track Straight.unity
+    guid: 55154df24ed5e4ff99bcec71a95d6511
   m_configObjects: {}

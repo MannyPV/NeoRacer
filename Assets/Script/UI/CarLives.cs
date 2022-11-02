@@ -20,7 +20,6 @@ public class CarLives : MonoBehaviour
 
     public AudioClip loseLifeSFX;
 
-    // Start is called before the first frame update
     void Start()
     {
         canLoseLife = true;
@@ -29,33 +28,22 @@ public class CarLives : MonoBehaviour
         Debug.Log("Player has " + lives + " lives");
     }
 
-    // Update is called once per frame
     void Update()
-    {   // this script sucks sorry lmao
+    { 
         if (lives < 3 && life1.activeSelf == true)
         {
-            //Debug.Log("Life 1 disabled");
             LeanTween.alpha(life1.GetComponent<RectTransform>(), 0f, 0.5f).setOnComplete(RemoveStarOne);
-            //life1.SetActive(false);
         }
 
         if (lives < 2 && life2.activeSelf == true)
         {
-            //Debug.Log("Life 2 disabled");
             LeanTween.alpha(life2.GetComponent<RectTransform>(), 0f, 0.5f).setOnComplete(RemoveStarTwo);
-            //life2.SetActive(false);
         }
 
         if (lives < 1 && life3.activeSelf == true)
         {
-            //Debug.Log("Life 3 disabled");
             LeanTween.alpha(life3.GetComponent<RectTransform>(), 0f, 0.5f).setOnComplete(RemoveStarThree);
-            //life3.SetActive(false);
-
-            Debug.Log("PLAYER LOSE");
             GameOverUI.SetActive(true);
-            //LoadLoseScreen();
-
         }
     }
 
@@ -81,20 +69,7 @@ public class CarLives : MonoBehaviour
         canLoseLife = true;
     }
 
-    void RemoveStarOne()
-    {
-        life1.SetActive(false);
-    }
-
-    void RemoveStarTwo()
-    {
-        life2.SetActive(false);
-    }
-
-    void RemoveStarThree()
-    {
-        life3.SetActive(false);
-    }
-
-
+    void RemoveStarOne() => life1.SetActive(false);
+    void RemoveStarTwo() => life2.SetActive(false);
+    void RemoveStarThree() => life3.SetActive(false);
 }

@@ -19,7 +19,6 @@ public class MainMenuManager : MonoBehaviour
     {
         SoundManager.instance.PlaySFX(welcomeSFX);
         SoundManager.instance.PlayMusic(bgMusic);
-
         NoSelections();
         EventSystem.current.SetSelectedGameObject(_playBtn);
     }
@@ -27,7 +26,6 @@ public class MainMenuManager : MonoBehaviour
     public void PlayClicked()
     {
         SoundManager.instance.PlaySFX(selectSFX);
-
         SceneManager.LoadScene("New Track Oval");
     }
 
@@ -111,7 +109,6 @@ public class MainMenuManager : MonoBehaviour
 
         LeanTween.alpha(_creditsBackground.GetComponent<RectTransform>(), 0.5f, 0.8f);
 
-
         LeanTween.moveLocal(_playBtn, new Vector3(-1750f, 300f, 0f), 0.7f).setDelay(0.3f).setEase(LeanTweenType.easeInCubic);
         LeanTween.moveLocal(_recordsBtn, new Vector3(-1750f, 100f, 0f), 0.75f).setDelay(0.2f).setEase(LeanTweenType.easeInCubic);
         LeanTween.moveLocal(_settingsBtn, new Vector3(-1750f, -100f, 0f), 0.8f).setDelay(0.1f).setEase(LeanTweenType.easeInCubic);
@@ -143,12 +140,6 @@ public class MainMenuManager : MonoBehaviour
         SoundManager.instance.PlaySFX(selectSFX);
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
+    public void QuitGame() => Application.Quit();
 
-    
-
-    
 }

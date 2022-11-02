@@ -17,14 +17,9 @@ public class WinState : MonoBehaviour
         LeanTween.scale(_winstateTxt, new Vector3(1f, 1f, 1f), 1f).setDelay(0.8f).setEase(LeanTweenType.easeInCubic).setOnComplete(FreezeTime);
 
         EventSystem.current.SetSelectedGameObject(_returntomenuBtn);
-
     }
 
-
-    void FreezeTime()
-    {
-        Time.timeScale = 0;
-    }
+    void FreezeTime() => Time.timeScale = 0;
 
 
     public void ReturntoMenu()
@@ -33,11 +28,6 @@ public class WinState : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
-
-
+    public void QuitGame() => Application.Quit();
 
 }
