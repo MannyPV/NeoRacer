@@ -39,7 +39,7 @@ public class LapScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Lap" && CanDoLaps && Checkpoint.currentCheckPoint == Checkpoint.TotalCheckpoints)
+        if(other.tag == "Lap" && CanDoLaps)
         {
             SoundManager.instance.PlaySFX(lapSFX);
 

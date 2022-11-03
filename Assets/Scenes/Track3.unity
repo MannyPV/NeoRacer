@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.010486943, g: 0.05298245, b: 0.15319028, a: 1}
+  m_IndirectSpecularColor: {r: 0.010482521, g: 0.0529591, b: 0.1531336, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -64047,11 +64047,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1915420530527979598, guid: 5ab1f84c6a09db947a82b6a2fadf957e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 121.01
+      value: 123.71
       objectReference: {fileID: 0}
     - target: {fileID: 1915420530527979598, guid: 5ab1f84c6a09db947a82b6a2fadf957e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.81
+      value: -22.74
       objectReference: {fileID: 0}
     - target: {fileID: 1915420530527979598, guid: 5ab1f84c6a09db947a82b6a2fadf957e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64203,6 +64203,10 @@ PrefabInstance:
       propertyPath: respawnSpot
       value: 
       objectReference: {fileID: 1535328244}
+    - target: {fileID: 1085310712, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
+      propertyPath: TotalCheckpoints
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 1511274962, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
       propertyPath: Gears
       value: 
@@ -64279,6 +64283,10 @@ PrefabInstance:
       propertyPath: LapDisplayText
       value: 
       objectReference: {fileID: 1445344581}
+    - target: {fileID: 7839326824834942353, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
+      propertyPath: minTimeBetweenLaps
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7839326824834942356, guid: 8ca1e55cc004a73449e714e2617b74cf, type: 3}
       propertyPath: m_Drag
       value: 0.5
